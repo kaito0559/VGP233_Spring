@@ -60,6 +60,12 @@ public class PlayerController : MonoBehaviour
         {
             isOnBuilding = true;
         }
+        else if(collision.gameObject.CompareTag("Ground"))
+        {
+            Destroy(gameObject);
+            gameOver = true;
+            Debug.Log("Game Over");
+        }
         else if (collision.gameObject.CompareTag("Enemy"))
         {
             gameOver = true;

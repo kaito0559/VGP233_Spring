@@ -41,7 +41,14 @@ public class EnemyController : MonoBehaviour
         }
         else if(gameOver == true)
         {
-            enemyAnim.speed = 0;
+
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            Destroy(gameObject);
         }
     }
 }
