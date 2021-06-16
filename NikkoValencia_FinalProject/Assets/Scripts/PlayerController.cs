@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody playerRb;
     private bool isOnBuilding = true;
     private Animator playerAnim;
-    //private AudioSource audioSource;
+    private AudioSource audioSource;
     private float leftBound = -6.5f;
     private float rightBound = 3.0f;
     private float horizontalInput;
